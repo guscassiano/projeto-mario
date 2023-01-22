@@ -1,8 +1,8 @@
 @media (max-width: 1200px) {
-    body {
-        background-color: green;
-    }
     
+    body {
+        background-color:rgba(0,0,0,0.9);
+    }
     .container {
         flex-wrap: wrap;
         justify-content: center;
@@ -10,6 +10,10 @@
         gap: 30px;
     }
 
+    .container .title-movie {
+        margin-top: 50px;
+        max-width: 100%;
+    }
     .container .mario {
         max-width: 50%;
     }
@@ -22,15 +26,27 @@
 
     .container .text {
         color: #fff;
-        text-align: center;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+    }
+
+    .backvideo {
+        height: 100vh;
+    }
+
+    header nav li{
+        padding: 0 10px;
+    }
+
+    .container .title-movie {
+        margin-top: 50px;
+        max-width: 100%;
     }
 
     .container .title-image {
